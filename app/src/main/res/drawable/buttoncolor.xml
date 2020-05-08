@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!-- idea from https://stackoverflow.com/questions/33071410/change-the-color-of-a-disabled-button-in-android and https://www.youtube.com/watch?v=ImPMfzt1mGQ -->
+    <item android:state_enabled="true">
+
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+
+            <corners android:bottomRightRadius="30dp"
+                android:bottomLeftRadius="30dp"
+                android:topRightRadius="30dp"
+                android:topLeftRadius="30dp"/>
+
+            <gradient android:startColor="#8800c79c" android:endColor="#BB26806C" />
+
+
+        </shape>
+
+    </item>
+
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="#eedddddd" />
+            <corners android:radius="32dp" />
+        </shape>
+    </item>
+
+
+</selector>
